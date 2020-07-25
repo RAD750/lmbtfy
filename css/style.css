@@ -1,15 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 400;
     text-align: center;
     overflow-x: hidden;
     cursor: default;
-    margin: 0
+    margin: 0;
 }
 
 h1 {
     font-weight: 400;
-    font-size: 36px
+    font-size: 36px;
 }
 
 small {
@@ -18,12 +18,12 @@ small {
 
 a,
 a:visited {
-    color: #0064be;
+    color: #1a0dab;
     text-decoration: none
 }
 
 a:visited {
-    color: #0064be
+    color: #1a0dab;
 }
 
 a:active,
@@ -115,8 +115,9 @@ input {
 .search-form {
     width: 563px;
     height: 44px;
-    border-radius: 34px;
-    padding: 0 57px 0 12px
+    border-radius: 6px;
+    padding: 0 57px 0 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
 }
 
 .search-input {
@@ -142,11 +143,11 @@ input {
     padding: 0 13px;
     font-size: 24px;
     cursor: pointer;
-    -webkit-transition: all 0ms;
-    -moz-transition: all 0ms;
-    -ms-transition: all 0ms;
-    -o-transition: all 0ms;
-    transition: all 0ms
+    -webkit-transition: all 0;
+    -moz-transition: all 0;
+    -ms-transition: all 0;
+    -o-transition: all 0;
+    transition: all 0
 }
 
 .url-result-container {
@@ -178,7 +179,7 @@ input {
 }
 
 .about-header {
-    background-color: #4ba2ea;
+    background-color: #00809d;
     color: #fff;
     padding: 80px;
     margin: 0;
@@ -221,7 +222,7 @@ footer {
 }
 
 .light-theme .top-border {
-    border-top: 4px solid #4ba2ea
+    border-top: 4px solid #00809d
 }
 
 .light-theme .bing-link small,
@@ -235,9 +236,10 @@ footer {
     border: 1px solid #c8cbd3
 }
 
-.light-theme .search-form:active {
+
+/*.light-theme .search-form:active {
     border-color: rgba(204, 205, 200, .5)
-}
+}*/
 
 .light-theme .search-input {
     background-color: transparent;
@@ -246,12 +248,16 @@ footer {
 
 .light-theme .search-submit {
     background-color: transparent;
-    color: #313739
+    color: #027daa
 }
 
 .dark-theme {
-    background-color: #21252b;
-    color: #e6e6e6
+    background-color: #eeeeee;
+    color: #eeeeee;
+}
+
+.dark-theme h1 {
+    text-shadow: 3px 3px 10px #222;
 }
 
 .dark-theme .top-border {
@@ -265,8 +271,8 @@ footer {
 
 .dark-theme .search-form,
 .dark-theme .url-result {
-    background-color: #2c3036;
-    border: 1px solid #2c3036
+    background-color: #eeeeee;
+    color: #222222
 }
 
 .dark-theme .search-form:active {
@@ -274,17 +280,21 @@ footer {
 }
 
 .dark-theme .search-input {
-    background-color: #2c3036;
-    color: #e6e6e6
+    background-color: #eeeeee;
+    color: #222222;
 }
 
 .dark-theme .search-submit {
     background-color: transparent;
-    color: #e6e6e6
+    color: #007daa
 }
 
 .dark-theme a {
-    color: #65cee7
+    color: #007daa;
+}
+
+.dark-theme footer {
+    background: #000;
 }
 
 @media screen and (max-height:500px) {
