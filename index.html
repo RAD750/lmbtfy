@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" max-age="604800" content="public">
+    <meta name="robots" content="index, follow, archive, cache, imageindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jacopo Cassinis">
+    <meta name="keywords" content="qwant, qwant search, lmqtfy, let me qwant that for you, let me qwant this for you, let me search that for you">
+    <link rel="canonical" href="https://lmqtfy.eu">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Let Me Bing That For You" />
+
+    <title>Let Me bing&trade; That For You - LMBTFY</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="fonts/icons/icons.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- for users without javascript -->
+    <noscript>
+      <style>
+        .shortened-url-result, .url-output, #search-form {
+          display: none;
+        }
+        body {
+            background-image: url('/img/backdrops/sandra-ahn-mode-8UHy79yNrCU-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: 100vw;
+        }
+      </style>
+    </noscript>
+
+    <style id="js-backdrop">
+
+    </style>
+</head>
+
+<body class="dark-theme" onload=findImage()>
+    <!-- the red border along the top -->
+    <div class="top-border"></div>
+
+    <!-- theme settings -->
+
+    <!-- header -->
+    <h1 class="main-header">
+        <a href="https://bing.com" class="bing-logo-link bing-logo-container">
+            <img alt="Bing logo" src="img/bing-logo.svg" class="bing-logo" id="bing-logo" style="height:inherit">
+        </a>
+        Let Me bing&trade; That For You
+    </h1>
+
+    <!-- search bar -->
+    <div class="search-container">
+        <noscript>
+        <form id="search-form-no-js" class="search-form" name="search" method="GET" action="https://lite.bing.com">
+          <img alt="cursor" id="cursor" class="cursor">
+
+          <input autofocus autocorrect="off" autocapitalize="off" id="search-input" class="search-input" autocomplete="off" name="q" tabindex="1" value="" type="text">
+          <input type="hidden" name="t" value="lmddgtfy">
+          <input type="hidden" name="theme" value="-1" id="bing-theme-url-param">
+          <input type="submit" tabindex="2" value="S" id="search-submit" class="search-submit icon-search">
+        </form>
+      </noscript>
+
+        <form id="search-form" class="search-form" name="search" method="GET" action="https://bing.com">
+            <img alt="cursor" id="cursor" class="cursor">
+
+            <input autofocus autocorrect="off" autocapitalize="off" id="search-input" class="search-input" autocomplete="off" name="q" tabindex="1" value="" type="text">
+            <input type="hidden" name="t" value="lmddgtfy">
+            <input type="hidden" name="theme" value="-1" id="bing-theme-url-param">
+            <input type="submit" tabindex="2" value="S" id="search-submit" class="search-submit icon-search">
+        </form>
+    </div>
+
+    <!-- the url to share -->
+    <div class="url-result-container search-container">
+        <form class="search-form url-output-form">
+            <noscript>
+          <span class="no-js-url-output">Please enable JavaScript to share your search.</span>
+        </noscript>
+
+            <output for="search-input" name="url-output" class="url-output">
+          <label for="url-result" class="url-result-label">Share this search: </label>
+          <input type="text" id="url-result" class="search-input url-result" readonly>
+          <!-- give them the option to shorten the url -->
+          <small><a href="" id="shorten-url-result" class="shortened-url-result" tabindex="4">Shorten URL</a></small> or <small class="large-screen-preview-link"><a href="" class="preview-search-link">Preview search</a></small><small class="small-screen-preview-link"><a href="" class="preview-search-link">Preview</a></small>
+        </output>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <small>&copy; Copyright <script>document.write(new Date().getFullYear());</script> <a href="about.html">LMBTFY</a>. The word &ldquo;Bing&rdquo; and the Bing logo are copyrighted by <a href="https://bing.com/" target="_blank">Bing</a>, and Microsoft Corporation. This site is not affiliated with Bing.</small>
+        <small id="js-unsplash-attrib">Backdrop photo by <a href="https://unsplash.com/@sandramode?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sandra Ahn Mode</a> on Unsplash.</small>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typetype.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
