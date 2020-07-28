@@ -4,12 +4,16 @@ body {
     text-align: center;
     overflow-x: hidden;
     cursor: default;
-    margin: 0;
+    margin: 0
+}
+
+html {
+    height: 100%!important;
 }
 
 h1 {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 36px
 }
 
 small {
@@ -23,7 +27,7 @@ a:visited {
 }
 
 a:visited {
-    color: #1a0dab;
+    color: #1a0dab
 }
 
 a:active,
@@ -117,7 +121,7 @@ input {
     height: 44px;
     border-radius: 6px;
     padding: 0 57px 0 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3)
 }
 
 .search-input {
@@ -236,11 +240,6 @@ footer {
     border: 1px solid #c8cbd3
 }
 
-
-/*.light-theme .search-form:active {
-    border-color: rgba(204, 205, 200, .5)
-}*/
-
 .light-theme .search-input {
     background-color: transparent;
     color: #313739
@@ -252,12 +251,12 @@ footer {
 }
 
 .dark-theme {
-    background-color: #eeeeee;
-    color: #eeeeee;
+    background-color: #eee;
+    color: #eee
 }
 
 .dark-theme h1 {
-    text-shadow: 3px 3px 10px #222;
+    text-shadow: 3px 3px 10px #222
 }
 
 .dark-theme .top-border {
@@ -271,8 +270,8 @@ footer {
 
 .dark-theme .search-form,
 .dark-theme .url-result {
-    background-color: #eeeeee;
-    color: #222222
+    background-color: #eee;
+    color: #222
 }
 
 .dark-theme .search-form:active {
@@ -280,8 +279,8 @@ footer {
 }
 
 .dark-theme .search-input {
-    background-color: #eeeeee;
-    color: #222222;
+    background-color: #eee;
+    color: #222
 }
 
 .dark-theme .search-submit {
@@ -290,11 +289,11 @@ footer {
 }
 
 .dark-theme a {
-    color: #007daa;
+    color: #007daa
 }
 
 .dark-theme footer {
-    background: #000;
+    background: #000
 }
 
 @media screen and (max-height:500px) {
